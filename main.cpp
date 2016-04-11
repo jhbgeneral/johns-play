@@ -1,10 +1,12 @@
-//#include <QCoreApplication>
-#include "QDebug"
+#include <QApplication>
+#include <QLabel>
 
-int main(/* int argc, char *argv[] */)
+int main(int argc, char *argv[])
 {
-    qDebug() << "Hello Spot!";
-//    QCoreApplication a(argc, argv);
-    
-//    return a.exec();
+    QApplication app(argc, argv);
+
+    QLabel label ("Hello, QT World");
+    label.show ();
+
+    return app.exec();
 }

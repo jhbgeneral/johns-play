@@ -6,11 +6,7 @@
 
 QT       += core
 
-QT       -= gui
-
 TARGET = johns-play
-CONFIG   += console
-CONFIG   -= app_bundle
 
 TEMPLATE = app
 
