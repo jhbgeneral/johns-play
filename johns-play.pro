@@ -4,11 +4,14 @@
 #
 #-------------------------------------------------
 
-QT       += core
+QT      += core
+
+LIBS    += -lcups
 
 TARGET = johns-play
 
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+           listPrinters.cpp

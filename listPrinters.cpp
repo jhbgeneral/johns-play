@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cups/cups.h>
 
-int main(void)
+void listPrinters()
 {
     int i;
     int j;
@@ -39,6 +39,6 @@ int main(void)
 
     cupsFreeDests(num_dests, dests);
 
-    return (0);
+    return;
 }
 

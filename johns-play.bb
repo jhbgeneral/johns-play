@@ -15,6 +15,7 @@ SRC_URI = " \
     file://License \
     file://johns-play.pro \
     file://main.cpp \
+    file://listPrinters.cpp \
 "
 
 S = "${WORKDIR}"
