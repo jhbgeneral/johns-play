@@ -14,4 +14,5 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-           listPrinters.cpp
+           listPrinters.cpp \
+    testIterators.cpp

@@ -1,12 +1,15 @@
 #include <QApplication>
 #include <QLabel>
+#include <QDebug>
 
-extern void listPrinters();
+// extern void listPrinters();
+extern void testIterators();
 
 int main( /* int argc, char *argv[] */ )
 {
-    listPrinters();
+    testIterators();
 
+    // listPrinters();
 #if 0
     // Quicky Hello GUI app
     QApplication app(argc, argv);
