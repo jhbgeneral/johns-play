@@ -1,22 +1,14 @@
 #include <QApplication>
-#include <QLabel>
-#include <QDebug>
+#include "mainwindow.h"
 
-// extern void listPrinters();
-extern void testIterators();
-
-int main( /* int argc, char *argv[] */ )
+int main(int argc, char *argv[])
 {
-    testIterators();
+    // Application with a main window to experiment
+    // with QWSServer and QWSClient operations
 
-    // listPrinters();
-#if 0
-    // Quicky Hello GUI app
-    QApplication app(argc, argv);
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-    QLabel label ("Hello, QT World");
-    label.show ();
-
-    return app.exec();
-#endif
+    return a.exec();
 }

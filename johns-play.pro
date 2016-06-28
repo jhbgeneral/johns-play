@@ -1,12 +1,10 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-04-08T08:33:56
+# Project created by QtCreator 2016-06-28T12:43:44
 #
 #-------------------------------------------------
 
-QT      += core
-
-LIBS    += -lcups
+QT       += core gui
 
 TARGET = johns-play
 
@@ -14,5 +12,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-           listPrinters.cpp \
-    testIterators.cpp
+        mainwindow.cpp
+
+HEADERS  += mainwindow.h
+
+FORMS    += mainwindow.ui
