@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+class QApplication;
 
 namespace Ui {
 class MainWindow;
@@ -14,6 +15,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private slots:
+    void on_btnDoStuff_clicked();
+    void on_btnOne_clicked();
+    void on_btnTwo_clicked();
 
 private:
     Ui::MainWindow *ui;
