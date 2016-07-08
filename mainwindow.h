@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDebug>
+
 class QApplication;
 
 namespace Ui {
@@ -23,6 +25,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    void paintEvent(QPaintEvent * e);
+    bool event(QEvent *event);
 };
 
 #endif // MAINWINDOW_H

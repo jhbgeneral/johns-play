@@ -72,7 +72,36 @@ void MainWindow::on_btnOne_clicked()
 {
     qDebug("on_btnOne_clicked");
 }
+
 void MainWindow::on_btnTwo_clicked()
 {
     qDebug("on_btnTwo_clicked");
 }
+
+//
+// This overrides the QMainWindow's paintEvent(), method #1, on page 174,
+// and then calls the parent's paintEvent() to do the real paint
+//
+void MainWindow::paintEvent(QPaintEvent *e)
+{
+    qDebug("MainWindow::paintEvent(): enter");
+    QMainWindow::paintEvent(e);
+    qDebug("MainWindow::paintEvent(): return");
+}
+
+//
+// This overrides the QMainWindow's event(), method #2, on page 174,
+// and then calls the parent's event() to do the real work
+//
+bool MainWindow::event(QEvent *e)
+{
+    qDebug("MainWindow::event(): enter");
+    bool b = QMainWindow::event(e);
+    qDebug() << "MainWindow::event(): returned" << b;
+}
+
+// TODO:  3, Install event filter for single object
+
+// TODO:  4, Install event filter on the QApplication object
+
+// TODO:  5, Subclass QApplication and reimplement notify()
