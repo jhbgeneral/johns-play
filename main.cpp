@@ -4,13 +4,11 @@
 int main(int argc, char *argv[])
 {
     // Application with a main window to experiment
-    // with processEvents() operations
+    // with Input Method Editor (IME) operations
 
     QApplication app(argc, argv);
 
     MainWindow mainWin;
-
-//    app.installEventFilter(&mainWin);
 
     mainWin.show();
 
