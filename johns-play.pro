@@ -12,8 +12,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    myqapplication.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    myqapplication.h
 
 FORMS    += mainwindow.ui

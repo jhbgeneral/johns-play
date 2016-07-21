@@ -18,8 +18,6 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    bool eventFilter(QObject * obj, QEvent * e);
-
 private slots:
     void on_btnDoStuff_clicked();
     void on_btnOne_clicked();
@@ -27,10 +25,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-
-//    void paintEvent(QPaintEvent * e);
-//    bool event(QEvent *event);
-    bool allowKeys;
 };
 
 #endif // MAINWINDOW_H

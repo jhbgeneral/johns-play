@@ -1,18 +1,14 @@
-#include <QApplication>
-#include "mainwindow.h"
+#include <myqapplication.h>
+#include <QLabel>
 
 int main(int argc, char *argv[])
 {
-    // Application with a main window to experiment
-    // with processEvents() operations
+    MyQApplication app(argc, argv);
 
-    QApplication app(argc, argv);
-
-    MainWindow mainWin;
-
-//    app.installEventFilter(&mainWin);
-
-    mainWin.show();
+    QLabel lbl;
+    lbl.setText("Hello, QT World!");
+    lbl.setObjectName("Hello Label");
+    lbl.show();
 
     return app.exec();
 }
