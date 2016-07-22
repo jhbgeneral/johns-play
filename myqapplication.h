@@ -9,7 +9,9 @@ class MyQApplication : public QApplication
 public:
     explicit MyQApplication(int argc, char *argv[]);
     virtual bool notify(QObject *obj, QEvent *evt);
-    
+
+    int allowKeys;
+
 signals:
     
 public slots:

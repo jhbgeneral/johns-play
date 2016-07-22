@@ -1,14 +1,14 @@
-#include <myqapplication.h>
-#include <QLabel>
+#include <QApplication>
+#include "myqapplication.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
     MyQApplication app(argc, argv);
 
-    QLabel lbl;
-    lbl.setText("Hello, QT World!");
-    lbl.setObjectName("Hello Label");
-    lbl.show();
+    MainWindow mainWin;
+
+    mainWin.show();
 
     return app.exec();
 }
