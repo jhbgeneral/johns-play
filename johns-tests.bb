@@ -13,11 +13,13 @@ inherit qt4e
 
 SRC_URI = " \
     file://License \
-    file://johns-play.pro \
+    file://johns-tests.pro \
     file://main.cpp \
     file://mainwindow.cpp \
     file://mainwindow.h \
     file://mainwindow.ui \
+    file://myqapplication.cpp \
+    file://myqapplication.h \
 "
 
 S = "${WORKDIR}"
@@ -162,7 +164,7 @@ pwd
 do_install () {
     install -d ${D}/opt/vsd
     install -d ${D}/opt/vsd/lang
-    install -m 0755 ${S}/johns-play ${D}/opt/vsd
+    install -m 0755 ${S}/johns-tests ${D}/opt/vsd
 }
 
 FILES_${PN} = "/opt/vsd/vsdgui \

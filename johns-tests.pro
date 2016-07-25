@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-TARGET = johns-play
+TARGET = johns-tests
 
 TEMPLATE = app
 
